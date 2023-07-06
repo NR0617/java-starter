@@ -10,7 +10,13 @@ class Birthday {
     }
 
     public void setDay(int day) {
-        this.day = day;
+        if(month == 2) {
+            if(day < 1 || day > 28) {
+                System.out.println("날짜 오류입니다.");
+            }
+        } else {
+            this.day = day;
+        }
     }
 
     public int getMonth() {
