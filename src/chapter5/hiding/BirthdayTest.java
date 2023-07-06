@@ -1,4 +1,4 @@
-package Chapter5.hiding;
+package chapter5.hiding;
 
 class Birthday {
     private int day;

@@ -1,4 +1,4 @@
-package Chapter6.staticEx;
+package chapter6.staticEx;
 
 public class Student {
     // 인스턴스가 공유하는 값은 static

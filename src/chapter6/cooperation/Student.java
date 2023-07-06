@@ -1,4 +1,4 @@
-package Chapter6.cooperation;
+package chapter6.cooperation;
 
 public class Student {
     String studentName;

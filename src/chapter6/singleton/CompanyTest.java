@@ -1,4 +1,4 @@
-package Chapter6.singleton;
+package chapter6.singleton;
 
 import java.util.Calendar;
 

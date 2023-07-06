@@ -1,4 +1,4 @@
-package Chapter6.staticEx;
+package chapter6.staticEx;
 public class StudentTest {
     public static void main(String[] args) {
         System.out.println(Student.getSerialNumber());

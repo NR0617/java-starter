@@ -1,4 +1,4 @@
-package Chapter5.reference;
+package chapter5.reference;
 
 public class StudentTest {
     public static void main(String[] args) {
