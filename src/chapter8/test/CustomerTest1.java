@@ -10,7 +10,7 @@ public class CustomerTest1 {
         customerLee.setCustomerName("Lee");
 
         // 업캐스팅, 묵시적 형변환 -> 반대는 다운캐스팅
-        Customer customerKim = new VIPCustomer(0, null);
+        Customer customerKim = new VIPCustomer(0, null, 1001);
         customerKim.setCustomerId(10110);
         customerKim.setCustomerName("KIM");
 

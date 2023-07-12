@@ -6,7 +6,7 @@ public class CustomerTest2 {
 //        customerPark.setCustomerId(10101);
 //        customerPark.setCustomerName("PARK");
 
-        VIPCustomer customerHyun = new VIPCustomer(0, null);
+        VIPCustomer customerHyun = new VIPCustomer(0, null, 1000);
         customerHyun.setCustomerId(10111);
         customerHyun.setCustomerName("HYUN");
         //customerHyun.agentId = 1;

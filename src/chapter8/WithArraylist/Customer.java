@@ -1,4 +1,4 @@
-package chapter8.inheritance2;
+package chapter8.WithArraylist;
 
 public class Customer {
     protected int customerId; // protected는 상속관계에서 public처럼 사용할 수 있다(가시성,패키지달라도 가능)
@@ -28,8 +28,7 @@ public class Customer {
         customerGrade = "Silver";
         bonusRatio = 0.01;
 
-        System.out.println("Customer() 호출");
-
+        //System.out.println("Customer() 호출");
     }
 
     public Customer(int customerId, String customerName) {
@@ -39,7 +38,7 @@ public class Customer {
         customerGrade = "SILVER";
         bonusRatio = 0.01;
 
-        System.out.println("Customer(int, String) 호출");
+        //System.out.println("Customer(int, String) 호출");
     }
 
     public int calcPrice(int price) {
