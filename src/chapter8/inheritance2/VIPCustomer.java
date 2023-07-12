@@ -1,48 +1,22 @@
 package chapter8.inheritance2;
 
-public class VIPCustomer {
-    protected int customerId;
-    protected String customerName;
-    protected String customerGrade;
-    int bonusPoint;
-    double bonusRatio;
-    public int agentId;
+public class VIPCustomer extends Customer {
+    private int agentId;
     private double saleRatio;
 
-    public VIPCustomer() {
+    public VIPCustomer(int customerId, String customerName) {
+        super(customerId, customerName);
+        // super(); 컴파일러가 넣어준다. 자신의 바로 위 상위 클래스를 참조하는 키워드. 매개변수가 없으면 디폴트 컨스트럭터 호출
         customerGrade = "VIP";
-        bonusRatio = 0.01;
+        bonusRatio = 0.05;
+        saleRatio = 0.1;
+        //super.setBonusPoint(1000);
+        //bonusPoint= 1000;
+
+        System.out.println("VIPCustomer(int, String); 호출");
     }
 
-    public int calcPrice(int price) {
-
-        bonusPoint += price * bonusRatio;
-        return price;
+    public int getAgentId() {
+        return agentId;
     }
-    public String showCustomerInfo() {
-        return customerName + "님의 등급은 " + customerGrade + "이고, 보너스 포인트는" + bonusPoint + "입니다.";
-    }
-    public int getCustomerId() {
-        return customerId;
-    }
-    public int setCustomerId(int customerId) {
-        this.customerId = customerId;
-        return this.customerId;
-    }
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public String getCustomerGrade() {
-        return customerGrade;
-    }
-
-    public void setCustomerGrade(String customerGrade) {
-        this.customerGrade = customerGrade;
-    }
-
 }
