@@ -1,0 +1,26 @@
+package chapter9.template;
+
+public class AICar extends Car{
+
+    @Override
+    public void drive() {
+        System.out.println("자율주행합니다");
+        System.out.println("자동차가 스스로 방향을 전환합니다");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("자동차가 스스로 멈춥니다");
+    }
+
+    @Override
+    public void wipe() {
+        System.out.println("비나 눈의 양에 따라 자동으로 조절됩니다");
+    }
+
+    @Override
+    public void washCar() {
+//        super.washCar();
+        System.out.println("자동차가 스스로 세차합니다");
+    }
+}
