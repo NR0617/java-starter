@@ -3,7 +3,7 @@ package chapter15.stream.sirialization;
 import java.io.*;
 
 
-class Person implements Serializable {
+class Person implements Serializable{ //Marker 인터페이스
 
     @Serial
     private static final long serialVersionUID = 8886096394973229572L;
@@ -21,6 +21,7 @@ class Person implements Serializable {
     public String toString() {
         return name + ", " + title;
     }
+
 }
 
 public class SerializationTest {
